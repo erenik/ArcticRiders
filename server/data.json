@@ -15,15 +15,15 @@
     },
     "arabic": {
       "geolocation": {
-        "longitude": "",
-        "latitude": ""
+        "longitude": "20.955175",
+        "latitude": "64.751072"
       },
       "localized_data": {
-            "header": "Wok N Roll Arabic",
-            "category": "",
+            "header": "ووك رول",
+            "category": "المطبخ الصيني",
             "description": " ",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "11 AM",
+            "closing_hour": "8 PM"
       }
     }
   },
@@ -44,15 +44,15 @@
     },
     "arabic": {
       "geolocation": {
-        "longitude": "",
-        "latitude": ""
+        "longitude": "20.954381",
+        "latitude": "64.751504"
       },
       "localized_data": {
-            "header": "Lilla Kina Arabic",
-            "category": "",
+            "header": "يلا كينا",
+            "category": "كباب",
             "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "10 AM",
+            "closing_hour": "10 PM"
       }
     }
   },
@@ -73,15 +73,15 @@
     },
     "arabic": {
       "geolocation": {
-        "longitude": "",
-        "latitude": ""
+        "longitude": "20.953361",
+        "latitude": "64.750848"
       },
       "localized_data": {
-            "header": "Big Smalj Torget Arabic",
-            "category": "",
+            "header": "مربع صغير كبير",
+            "category": "الوجبات السريعة",
             "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "10 AM",
+            "closing_hour": "8 PM"
       }
     }
   },
@@ -102,15 +102,15 @@
     },
     "arabic": {
       "geolocation": {
-        "longitude": "",
-        "latitude": ""
+        "longitude": "20.956204",
+        "latitude": "64.750790"
       },
       "localized_data": {
-            "header": "",
+            "header": "مطعم Nygatan 57",
             "category": "",
             "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "5 PM",
+            "closing_hour": "11 PM"
       }
     }
   },
