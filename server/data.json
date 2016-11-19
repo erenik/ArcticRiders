@@ -27,6 +27,20 @@
 				"closing_hour": "রাত ৮টা",
 				"offers": ["৩ পর্বের দুপুরের খাবার মাত্র ৪৫ ক্রনা"]
 			}
+		},
+		"arabic": {
+			"geolocation": {
+				"longitude": "20.955175",
+				"latitude": "64.751072"
+			},
+			"localized_data": {
+				"header": "وك اند رول",
+				"category": " مطبخ صیني",
+				"description": "افضل طعام اسیوي",
+				"opening_hour": "الحادية عشرة صباحا ",
+				"closing_hour": "الثامنة مساءا",
+				"offers": ["ثلاث ولائم بخمسة و اربعون کرون سویدي"]
+			}
 		}
 	},
 
@@ -138,8 +152,8 @@
 		},
 		"bangla": {
 			"geolocation": {
-				"longitude": "20.952819",
-				"latitude": "64.748737"
+				"longitude": "",
+				"latitude": ""
 			},
 			"localized_data": {
 				"header": "বারিজ্ঞারগাতান বিস্ট্র এবং বার",
