@@ -187,8 +187,7 @@ public class ARLocalizedInfo : MonoBehaviour
 		lastUpdateSecond = secondNow;
 		DownloadJSON();
 		// Update UI
-		UpdateTitleText();
-		UpdateDescription();
+		UpdateTexts();
 	}
 
 
@@ -219,14 +218,27 @@ public class ARLocalizedInfo : MonoBehaviour
         return sb.ToString();
     }
 
-	static string DecodeEncodedNonAsciiCharacters( string value ) 
+	string DecodeEncodedNonAsciiCharacters( string value ) 
 	{
-        return Regex.Replace(
+		string replaced = Regex.Replace(
             value,
             @"\\u(?<Value>[a-zA-Z0-9]{4})",
             m => {
                 return ((char) int.Parse( m.Groups["Value"].Value, NumberStyles.HexNumber )).ToString();
             } );
+		if (language.Equals("arabic"))
+		{
+			char[] cArray = replaced.ToCharArray();
+			char[] newCArray = new char[cArray.Length];
+			for (int i = cArray.Length - 1; i >= 0; --i)
+			{
+				newCArray[cArray.Length - i - 1] = cArray[i];
+    	    }
+//	    	replaced = new string(newCArray); 
+			String reverse = new String(newCArray);
+    	    return reverse;
+		}
+        return replaced;
     }
 	void UpdateTitleText()
 	{		
@@ -237,9 +249,6 @@ public class ARLocalizedInfo : MonoBehaviour
 		iterations += 1;
 
 		/// Convert from char array to unicode
-
-//string convertedUtf8 = Encoding.UTF8.GetString(bytes);
-//string convertedUtf16 = Encoding.Unicode.GetString(bytes); // For UTF-16
 		
 /*
 		byte[] bytes = new byte[textToUpdate.ToCharArray().Length];
@@ -277,10 +286,42 @@ public class ARLocalizedInfo : MonoBehaviour
 	{
 		if (language.Equals("english"))
 			language = "bangla";
+		else if (language.Equals("bangla"))
+			language = "arabic";
 		else
 			language = "english";
+		UpdateTexts();
+	}
+	public void UpdateTexts()
+	{
 		UpdateDescription();
 		UpdateTitleText();
+		UpdateCategory();		
+	}
+	void UpdateCategory()
+	{
+		GameObject textObject = GameObject.Find("Category");
+		if (textObject == null)
+		{
+			Debug.Log("Yeaheayag no title text D::::");
+			return;
+		}
+		TextMesh tm = textObject.GetComponent<TextMesh>(); 
+		String text = "";
+		text = GetCategory();
+		tm.text = DecodeEncodedNonAsciiCharacters(text);
+	}
+	String GetCategory()
+	{
+		JSONObject localizedData = GetLocalizedData();
+		if (localizedData == null)
+			return "Error: "+errorString;
+		for (int i = 0; i < localizedData.Count; ++i)
+		{
+			if (localizedData.keys[i].Equals("category", StringComparison.Ordinal))
+				return localizedData.list[i].str;
+		}
+        return "Description could not be found";		
 	}
 	void OnMarkerLost(ARMarker marker)
 	{
@@ -379,10 +420,21 @@ public class ARLocalizedInfo : MonoBehaviour
 	}
 
 	// Download JSON once / or when config changes?
+	static int downloadRequests = 0; 
 	void DownloadJSON()
 	{
 		if (jsonDownload != null)
-			return;
+		{
+			// One successful one earlier? Then don't try to re-download it.
+			if (jsonDownload.isDone)
+				return;
+			// However, if it never succeeded, try and re-download it every 10 seconds.
+			++downloadRequests;
+			if (downloadRequests < 10)
+				return;
+			// Re-download every 10 seconds?
+			downloadRequests = 0;
+		}
 		String url = "https://raw.githubusercontent.com/erenik/ArcticRiders/master/server/data.json";
 		url = "http://54.212.196.65:5000/api/getDetails/1";
 		// url = "http://www.google.come";
