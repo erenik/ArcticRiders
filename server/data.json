@@ -19,7 +19,7 @@
         "latitude": ""
       },
       "localized_data": {
-            "header": "",
+            "header": "Wok N Roll Arabic",
             "category": "",
             "description": " ",
             "opening_hour": "",
@@ -48,7 +48,7 @@
         "latitude": ""
       },
       "localized_data": {
-            "header": "",
+            "header": "Lilla Kina Arabic",
             "category": "",
             "description": "",
             "opening_hour": "",
@@ -67,8 +67,8 @@
             "header": "Big Smalj Torget",
             "category": "Fast Food",
             "description": "",
-            "opening_hour": "0 AM",
-            "closing_hour": "4 PM"
+            "opening_hour": "10 AM",
+            "closing_hour": "8 PM"
       }
     },
     "arabic": {
@@ -77,7 +77,7 @@
         "latitude": ""
       },
       "localized_data": {
-            "header": "",
+            "header": "Big Smalj Torget Arabic",
             "category": "",
             "description": "",
             "opening_hour": "",
@@ -89,15 +89,15 @@
   "4": {
     "english": {
       "geolocation": {
-        "longitude": " ",
-        "latitude": ""
+        "longitude": "20.956204",
+        "latitude": "64.750790"
       },
       "localized_data": {
-            "header": "",
-            "category": "",
+            "header": "Restaurang Nygatan 57",
+            "category": "Pure Dining",
             "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "5 PM",
+            "closing_hour": "11 PM"
       }
     },
     "arabic": {
@@ -117,15 +117,15 @@
   "5": {
     "english": {
       "geolocation": {
-        "longitude": " ",
-        "latitude": ""
+        "longitude": "20.952819",
+        "latitude": "64.748737"
       },
       "localized_data": {
-            "header": "",
-            "category": "",
+            "header": "Bryggargatan Bistro och Bar",
+            "category": "Bar",
             "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "5 PM",
+            "closing_hour": "11 PM"
       }
     },
     "arabic": {
@@ -145,15 +145,15 @@
   "6": {
     "english": {
       "geolocation": {
-        "longitude": " ",
-        "latitude": ""
+        "longitude": "20.950719",
+        "latitude": "64.751198"
       },
       "localized_data": {
-            "header": "",
-            "category": "",
-            "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "header": "Skelleftea Sushi Bar",
+            "category": "Japanise Cuisine",
+            "description": "We sell the best sushi in town",
+            "opening_hour": "11 AM",
+            "closing_hour": "8 PM"
       }
     },
     "arabic": {
@@ -173,15 +173,15 @@
   "7": {
     "english": {
       "geolocation": {
-        "longitude": " ",
-        "latitude": ""
+        "longitude": "20.952082",
+        "latitude": "64.750965"
       },
       "localized_data": {
-            "header": "",
-            "category": "",
-            "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "header": "Espresso House",
+            "category": "Cafe",
+            "description": "Chain Cafe",
+            "opening_hour": "9 AM",
+            "closing_hour": "10 PM"
       }
     },
     "arabic": {
@@ -201,15 +201,15 @@
   "8": {
     "english": {
       "geolocation": {
-        "longitude": " ",
-        "latitude": ""
+        "longitude": "20.949775",
+        "latitude": "64.750754"
       },
       "localized_data": {
-            "header": "",
-            "category": "",
-            "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "header": "Carl-Viktor Café & Servering AB Carl-Viktor",
+            "category": "Catering",
+            "description": "We take big orders",
+            "opening_hour": "10 AM",
+            "closing_hour": "2 PM"
       }
     },
     "arabic": {
@@ -229,15 +229,15 @@
   "9": {
     "english": {
       "geolocation": {
-        "longitude": " ",
-        "latitude": ""
+        "longitude": "20.946513",
+        "latitude": "64.751389"
       },
       "localized_data": {
-            "header": "",
-            "category": "",
+            "header": "Texas Longhorn",
+            "category": "Restaurang",
             "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "4 PM",
+            "closing_hour": "10 PM"
       }
     },
     "arabic": {
@@ -257,15 +257,15 @@
   "10": {
     "english": {
       "geolocation": {
-        "longitude": " ",
-        "latitude": ""
+        "longitude": "20.948163",
+        "latitude": "64.750769"
       },
       "localized_data": {
-            "header": "",
+            "header": "Dallas",
             "category": "",
             "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "11 AM",
+            "closing_hour": "9 PM"
       }
     },
     "arabic": {
