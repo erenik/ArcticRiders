@@ -1,290 +1,284 @@
 {
   "1": {
     "english": {
-      'geolocation': {
-        'longitude': 
-        'latitude':
+      "geolocation": {
+        "longitude": "20.955175",
+        "latitude": "64.751072"
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header":"Wok N Roll",
+            "category": "Chinese cuisine",
+            "description": "N/A",
+            "opening_hour": "11 AM",
+            "closing_hour": "8 PM"
       }
     },
     "arabic": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": " ",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     }
   },
 
   "2": {
     "english": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "20.954381",
+        "latitude": "64.751504"
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "Lilla Kina",
+            "category": "Kebab",
+            "description": "N/A",
+            "opening_hour": "10AM",
+            "closing_hour": "10PM"
       }
     },
     "arabic": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     }
   },
 
   "3": {
     "english": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "20.953361",
+        "latitude": "64.750848"
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "Big Smalj Torget",
+            "category": "Fast Food",
+            "description": "",
+            "opening_hour": "0 AM",
+            "closing_hour": "4 PM"
       }
     },
     "arabic": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     }
   },
 
   "4": {
     "english": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": " ",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     },
     "arabic": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     }
   },
-
   "5": {
     "english": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": " ",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     },
     "arabic": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     }
   },
-
   "6": {
     "english": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": " ",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     },
     "arabic": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     }
   },
-
   "7": {
     "english": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": " ",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     },
     "arabic": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     }
   },
-
   "8": {
     "english": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": " ",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     },
     "arabic": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     }
   },
-
   "9": {
     "english": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": " ",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     },
     "arabic": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     }
   },
-
   "10": {
     "english": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": " ",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     },
     "arabic": {
-      'geolocation': {
-        'longitude':
-        'latitude':
+      "geolocation": {
+        "longitude": "",
+        "latitude": ""
       },
-      'localized_data': {
-            'header':
-            'category':
-            'description':
-            'opening_hour':
-            'closing_hour':
+      "localized_data": {
+            "header": "",
+            "category": "",
+            "description": "",
+            "opening_hour": "",
+            "closing_hour": ""
       }
     }
   }
