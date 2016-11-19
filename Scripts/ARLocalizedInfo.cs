@@ -54,6 +54,9 @@ public class ARLocalizedInfo : MonoBehaviour
 
 	public GameObject eventReceiver;
 
+    public String language = "english";
+    public String errorString = "";
+
 	// Private fields with accessors.
 	[SerializeField]
 	private string _markerTag = "";					// Unique tag for the marker to get tracking from
@@ -169,42 +172,58 @@ public class ARLocalizedInfo : MonoBehaviour
 		} // Application.isPlaying
 
 	}
-	static int iterations = 0;
-	void OnMarkerMadeVisible(ARMarker marker)
-	{
-		UpdateTitleText();
-	}
 
+	static int iterations = 0;
 	static int lastUpdateSecond = 0;
-	void UpdateTitleText()
+	void OnMarkerMadeVisible(ARMarker marker)
 	{
 		// Update every .. 2 seconds
 		int secondNow = (int) timeNowSeconds;
 		if (secondNow == lastUpdateSecond)
 			return;
-		DownloadJSON();
-		
 		lastUpdateSecond = secondNow;
+		DownloadJSON();
+		// Update UI
+		UpdateTitleText();
+		UpdateDescription();
+	}
 
+
+    bool showingDescription = true;
+    bool ShowingOffers()
+    { 
+    	return !showingDescription; 
+    }
+	public void OnOffersButtonClicked()
+	{
+        showingDescription = !showingDescription;
+        UpdateDescription();
+        GameObject textObject = GameObject.Find("OffersText");
+        textObject.GetComponent<TextMesh>().text = showingDescription? "Current Offers" : "Description"; 
+	}
+	void UpdateTitleText()
+	{		
 		String textToUpdate = "test "+iterations;
-		if (jsonDownload.isDone)
-		{
-			textToUpdate = jsonDownload.text;
-		}
 		textToUpdate = GetTitle();
-
 		GameObject textObject = GameObject.Find("TitleText");
-		if (textObject == null)
-		{
-			Debug.Log("Yeaheayag no title text D::::");
-			return;
-		}
 		TextMesh textMesh = textObject.GetComponent<TextMesh>();
 		iterations += 1;
      	textMesh.text = textToUpdate;		
 	}
 
-
+	public void UpdateDescription()
+	{
+		GameObject textObject = GameObject.Find("Description");
+		if (textObject == null)
+		{
+			Debug.Log("Yeaheayag no title text D::::");
+			return;
+		}
+		TextMesh tm = textObject.GetComponent<TextMesh>(); 
+		if (ShowingOffers())
+			tm.text = "Very offerious!";
+		tm.text = GetDescription();
+	}
 	void OnMarkerLost(ARMarker marker)
 	{
 		if (visible) {
@@ -220,39 +239,70 @@ public class ARLocalizedInfo : MonoBehaviour
 		}
 	}
 
-
+	JSONObject GetLocalizedData()
+	{
+		if (JSONDownloaded() == false)
+		{
+			errorString = "Not downloaded yet, progress: "+DownloadProgress();
+			return null;
+		}	
+		JSONObject jsonObj = new JSONObject(jsonDownload.text);
+        String res = "";
+        JSONObject data = jsonObj.GetField(language);
+        if (data == null)
+        {
+            errorString = "Could not find language: "+language+" "+JSONKeys(jsonObj);
+			return null;
+        }
+        for (int i = 0; i < data.Count; i++)
+        {
+        	if (data.keys[i].Equals("localized_data", StringComparison.Ordinal))
+        	{
+        		return data.list[i];
+            }
+        }
+        return null;
+	}
+	String JSONKeys(JSONObject obj)
+	{
+		String keys = "Values: ";
+		for (int i = 0; i < obj.keys.Count; ++i)
+		{
+			keys += ", "+obj.keys[i];
+		}
+		return keys;
+	}
 	String GetTitle()
 	{
-
-		String json = "{\"name\": \"evergreen\",  \"dependencies\": {\"body-parser\": \"~1.15.2\",\"cookie-parser\": \"~1.4.3\", } }";
-
-		String text = json;
+		JSONObject localizedData = GetLocalizedData();
+		if (localizedData == null)
+			return "Error: "+errorString;
+		for (int i = 0; i < localizedData.Count; ++i)
+		{
+			if (localizedData.keys[i].Equals("header", StringComparison.Ordinal))
+				return localizedData.list[i].str;
+		}
+        return "Title could not be found";
+	}
+	String GetDescription()
+	{
+		JSONObject localizedData = GetLocalizedData();
+		if (localizedData == null)
+			return "Error: "+errorString;
+		for (int i = 0; i < localizedData.Count; ++i)
+		{
+			if (localizedData.keys[i].Equals("description", StringComparison.Ordinal))
+				return localizedData.list[i].str;
+		}
+        return "Description could not be found";
+	}
+	bool JSONDownloaded()
+	{
+		if (jsonDownload == null)
+			return false;
 		if (jsonDownload.isDone)
-			text = jsonDownload.text;
-		JSONObject jsonObj = new JSONObject(text);
-		String resp = "Resp: ";
-		String keys = "Keys: ";
-		for (int i = 0; i < jsonObj.Count; ++i)
-		{
-			JSONObject lang = jsonObj[i];
-			for (int j = 0; j < lang.keys.Count; ++j)
-			{
-				keys += lang.keys[j]+", ";
-			}
-
-			resp += lang.str;
-		}
-		resp = "Type: "+jsonObj.type+" "+ keys + resp;
-		return resp;
-		/*
-		JSONObject responses = jsonObj.GetField("header");
-		for (int i = 0; i < responses.Count; ++i)
-		{
-			JSONObject resp = responses[i];
-			return resp.str;
-		}
-		return "No responses";
-	*/
+			return true;
+		return false;
 	}
 
 	// Download JSON once / or when config changes?
@@ -261,9 +311,22 @@ public class ARLocalizedInfo : MonoBehaviour
 		if (jsonDownload != null)
 			return;
 		String url = "https://raw.githubusercontent.com/erenik/ArcticRiders/master/server/data.json";
-		url = "http://54.212.196.65:5000/api/getDetails/4";
+		url = "http://54.212.196.65:5000/api/getDetails/1";
 		// url = "http://www.google.come";
 		jsonDownload = new WWW(url);
+	}
+
+	float DownloadProgress()
+	{
+		if (jsonDownload == null)
+			return -1;
+		return jsonDownload.progress;
+	}
+	int JSONDownloadSize()
+	{
+		if (JSONDownloaded())
+			return jsonDownload.bytesDownloaded;
+		return -1;
 	}
 }
 
