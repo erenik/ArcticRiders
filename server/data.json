@@ -1,285 +1,304 @@
 {
-  "1": {
-    "english": {
-      "geolocation": {
-        "longitude": "20.955175",
-        "latitude": "64.751072"
-      },
-      "localized_data": {
-            "header":"Wok N Roll",
-            "category": "Chinese cuisine",
-            "description": "N/A",
-            "opening_hour": "11 AM",
-            "closing_hour": "8 PM"
-      }
-    },
-    "arabic": {
-      "geolocation": {
-        "longitude": "20.955175",
-        "latitude": "64.751072"
-      },
-      "localized_data": {
-            "header": "ووك رول",
-            "category": "المطبخ الصيني",
-            "description": " ",
-            "opening_hour": "11 AM",
-            "closing_hour": "8 PM"
-      }
-    }
-  },
+	"1": {
+		"english": {
+			"geolocation": {
+				"longitude": "20.955175",
+				"latitude": "64.751072"
+			},
+			"localized_data": {
+				"header": "Wok N Roll",
+				"category": "Chinese cuisine",
+				"description": "Asian food at it's best",
+				"opening_hour": "11 AM",
+				"closing_hour": "8 PM",
+				"offers": ["3 meals lunch at 45 SEK"]
+			}
+		},
+		"bangla": {
+			"geolocation": {
+				"longitude": "20.955175",
+				"latitude": "64.751072"
+			},
+			"localized_data": {
+				"header": "ওক এন্ড রল",
+				"category": "চাইনিজ খাবার",
+				"description": "শহরের সেরা চাইনিজ খাবার পাওয়া যায়।",
+				"opening_hour": "সকাল ১১",
+				"closing_hour": "রাত ৮টা",
+				"offers": ["৩ পর্বের দুপুরের খাবার মাত্র ৪৫ ক্রনা"]
+			}
+		}
+	},
 
-  "2": {
-    "english": {
-      "geolocation": {
-        "longitude": "20.954381",
-        "latitude": "64.751504"
-      },
-      "localized_data": {
-            "header": "Lilla Kina",
-            "category": "Kebab",
-            "description": "N/A",
-            "opening_hour": "10AM",
-            "closing_hour": "10PM"
-      }
-    },
-    "arabic": {
-      "geolocation": {
-        "longitude": "20.954381",
-        "latitude": "64.751504"
-      },
-      "localized_data": {
-            "header": "يلا كينا",
-            "category": "كباب",
-            "description": "",
-            "opening_hour": "10 AM",
-            "closing_hour": "10 PM"
-      }
-    }
-  },
+	"2": {
+		"english": {
+			"geolocation": {
+				"longitude": "20.954381",
+				"latitude": "64.751504"
+			},
+			"localized_data": {
+				"header": "Lilla Kina",
+				"category": "Kebab",
+				"description": "Feeling of Arabian meat in Europe",
+				"opening_hour": "10AM",
+				"closing_hour": "10PM",
+				"offers": ["Beef kebab at 45 Krona", "Dinner with Lamb Kebab from 6-10 PM at 70 Krona"]
+			}
+		},
+		"bangla": {
+			"geolocation": {
+				"longitude": "20.954381",
+				"latitude": "64.751504"
+			},
+			"localized_data": {
+				"header": "লিল্লা কিনা",
+				"category": "কাবাব",
+				"description": "ইউরোপে আরব খাবারের স্বাদ",
+				"opening_hour": "সকাল ১০টা",
+				"closing_hour": "রাত ১০টা",
+				"offers": ["শিক কাবাব ৪৫ ক্রনা", "৬-১০টা পর্যন্ত নৈশভোজে খাসির কাবাব মাত্র ৭০ ক্রনা"]
+			}
+		}
+	},
 
-  "3": {
-    "english": {
-      "geolocation": {
-        "longitude": "20.953361",
-        "latitude": "64.750848"
-      },
-      "localized_data": {
-            "header": "Big Smalj Torget",
-            "category": "Fast Food",
-            "description": "",
-            "opening_hour": "10 AM",
-            "closing_hour": "8 PM"
-      }
-    },
-    "arabic": {
-      "geolocation": {
-        "longitude": "20.953361",
-        "latitude": "64.750848"
-      },
-      "localized_data": {
-            "header": "مربع صغير كبير",
-            "category": "الوجبات السريعة",
-            "description": "",
-            "opening_hour": "10 AM",
-            "closing_hour": "8 PM"
-      }
-    }
-  },
+	"3": {
+		"english": {
+			"geolocation": {
+				"longitude": "20.953361",
+				"latitude": "64.750848"
+			},
+			"localized_data": {
+				"header": "Big Smalj Torget",
+				"category": "Fast Food",
+				"description": "Best burger in the city",
+				"opening_hour": "10 AM",
+				"closing_hour": "8 PM",
+				"offers": ["Beef burger at 35 Krona", "Child menu at 50 Krona", "Dinner pack from 6-10 PM at 65 Krona"]
+			}
+		},
+		"bangla": {
+			"geolocation": {
+				"longitude": "20.953361",
+				"latitude": "64.750848"
+			},
+			"localized_data": {
+				"header": "বড় ছোট টরগেট",
+				"category": "ফাস্ট ফুড",
+				"description": "শহরের সেরা বার্গার",
+				"opening_hour": "সকাল ১০ট",
+				"closing_hour": "রাত ৮টা"
+			}
+		}
+	},
 
-  "4": {
-    "english": {
-      "geolocation": {
-        "longitude": "20.956204",
-        "latitude": "64.750790"
-      },
-      "localized_data": {
-            "header": "Restaurang Nygatan 57",
-            "category": "Pure Dining",
-            "description": "",
-            "opening_hour": "5 PM",
-            "closing_hour": "11 PM"
-      }
-    },
-    "arabic": {
-      "geolocation": {
-        "longitude": "20.956204",
-        "latitude": "64.750790"
-      },
-      "localized_data": {
-            "header": "مطعم Nygatan 57",
-            "category": "",
-            "description": "",
-            "opening_hour": "5 PM",
-            "closing_hour": "11 PM"
-      }
-    }
-  },
-  "5": {
-    "english": {
-      "geolocation": {
-        "longitude": "20.952819",
-        "latitude": "64.748737"
-      },
-      "localized_data": {
-            "header": "Bryggargatan Bistro och Bar",
-            "category": "Bar",
-            "description": "",
-            "opening_hour": "5 PM",
-            "closing_hour": "11 PM"
-      }
-    },
-    "arabic": {
-      "geolocation": {
-        "longitude": "",
-        "latitude": ""
-      },
-      "localized_data": {
-            "header": "",
-            "category": "",
-            "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
-      }
-    }
-  },
-  "6": {
-    "english": {
-      "geolocation": {
-        "longitude": "20.950719",
-        "latitude": "64.751198"
-      },
-      "localized_data": {
-            "header": "Skelleftea Sushi Bar",
-            "category": "Japanise Cuisine",
-            "description": "We sell the best sushi in town",
-            "opening_hour": "11 AM",
-            "closing_hour": "8 PM"
-      }
-    },
-    "arabic": {
-      "geolocation": {
-        "longitude": "",
-        "latitude": ""
-      },
-      "localized_data": {
-            "header": "",
-            "category": "",
-            "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
-      }
-    }
-  },
-  "7": {
-    "english": {
-      "geolocation": {
-        "longitude": "20.952082",
-        "latitude": "64.750965"
-      },
-      "localized_data": {
-            "header": "Espresso House",
-            "category": "Cafe",
-            "description": "Chain Cafe",
-            "opening_hour": "9 AM",
-            "closing_hour": "10 PM"
-      }
-    },
-    "arabic": {
-      "geolocation": {
-        "longitude": "",
-        "latitude": ""
-      },
-      "localized_data": {
-            "header": "",
-            "category": "",
-            "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
-      }
-    }
-  },
-  "8": {
-    "english": {
-      "geolocation": {
-        "longitude": "20.949775",
-        "latitude": "64.750754"
-      },
-      "localized_data": {
-            "header": "Carl-Viktor Café & Servering AB Carl-Viktor",
-            "category": "Catering",
-            "description": "We take big orders",
-            "opening_hour": "10 AM",
-            "closing_hour": "2 PM"
-      }
-    },
-    "arabic": {
-      "geolocation": {
-        "longitude": "",
-        "latitude": ""
-      },
-      "localized_data": {
-            "header": "",
-            "category": "",
-            "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
-      }
-    }
-  },
-  "9": {
-    "english": {
-      "geolocation": {
-        "longitude": "20.946513",
-        "latitude": "64.751389"
-      },
-      "localized_data": {
-            "header": "Texas Longhorn",
-            "category": "Restaurang",
-            "description": "",
-            "opening_hour": "4 PM",
-            "closing_hour": "10 PM"
-      }
-    },
-    "arabic": {
-      "geolocation": {
-        "longitude": "",
-        "latitude": ""
-      },
-      "localized_data": {
-            "header": "",
-            "category": "",
-            "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
-      }
-    }
-  },
-  "10": {
-    "english": {
-      "geolocation": {
-        "longitude": "20.948163",
-        "latitude": "64.750769"
-      },
-      "localized_data": {
-            "header": "Dallas",
-            "category": "",
-            "description": "",
-            "opening_hour": "11 AM",
-            "closing_hour": "9 PM"
-      }
-    },
-    "arabic": {
-      "geolocation": {
-        "longitude": "",
-        "latitude": ""
-      },
-      "localized_data": {
-            "header": "",
-            "category": "",
-            "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
-      }
-    }
-  }
+	"4": {
+		"english": {
+			"geolocation": {
+				"longitude": "20.956204",
+				"latitude": "64.750790"
+			},
+			"localized_data": {
+				"header": "Restaurang Nygatan 57",
+				"category": "Swedish Dining",
+				"description": "Higher Quality, Higher Price",
+				"opening_hour": "5 PM",
+				"closing_hour": "11 PM",
+				"offers": ["3 course meals at dinner at 135 Krona"]
+			}
+		},
+		"bangla": {
+			"geolocation": {
+				"longitude": "20.956204",
+				"latitude": "64.750790"
+			},
+			"localized_data": {
+				"header": "নাইগাতান ৫৭ রেস্টুরেন্ট",
+				"category": "সুইডিশ খাবার",
+				"description": "দারুন স্বাদ, দারুন দাম",
+				"opening_hour": "বিকাল ৫টা",
+				"closing_hour": "রাত ১১টা",
+				"offers": ["৩ পর্বের নৈশভোজ মাত্র ১৩৫ ক্রনা"]
+			}
+		}
+	},
+	"5": {
+		"english": {
+			"geolocation": {
+				"longitude": "20.952819",
+				"latitude": "64.748737"
+			},
+			"localized_data": {
+				"header": "Bryggargatan Bistro och Bar",
+				"category": "Cafe & Bar",
+				"description": "Most happenig bar in weekends",
+				"opening_hour": "5 PM",
+				"closing_hour": "12 PM",
+				"offers": ["Beer at 25 Krona at Happy Hour(18-21PM)"]
+			}
+		},
+		"bangla": {
+			"geolocation": {
+				"longitude": "",
+				"latitude": ""
+			},
+			"localized_data": {
+				"header": "বারিজ্ঞারগাতান বিস্ট্র এবং বার",
+				"category": "ক্যাফে ও বার",
+				"description": "ছুটিরদিনে সবচেয়ে জমজমাট বার",
+				"opening_hour": "বিকাল ৫টা",
+				"closing_hour": "রাত ১২টা",
+				"offers": ["খুশির সময়(সন্ধ্যা ৬টা থেকে রাত ৯টা) বিয়ার মাত্র ২৫ ক্রনা"]
+			}
+		}
+	},
+	"6": {
+		"english": {
+			"geolocation": {
+				"longitude": "20.950719",
+				"latitude": "64.751198"
+			},
+			"localized_data": {
+				"header": "Skelleftea Sushi Bar",
+				"category": "Japanise Cuisine",
+				"description": "We sell the best sushi in town",
+				"opening_hour": "11 AM",
+				"closing_hour": "8 PM",
+				"offers": ["Sashimi in dinner at 60 Krona", "Nigiri Sushi at 75 Krona"]
+			}
+		},
+		"bangla": {
+			"geolocation": {
+				"longitude": "20.950719",
+				"latitude": "64.751198"
+			},
+			"localized_data": {
+				"header": "সেলেফথে সুশি বার",
+				"category": "জাপানিজ খাবার",
+				"description": "শহরেরর সেরা সুশি রেস্টুরেন্ট",
+				"opening_hour": "সকাল ১১টা",
+				"closing_hour": "রাত ৮টা",
+				"offers": ["রাতের খাবারে শাশিমি ৬০ ক্রনা", "নিগিরি সুশি মাত্র ৭৫ ক্রনা"]
+			}
+		}
+	},
+	"7": {
+		"english": {
+			"geolocation": {
+				"longitude": "20.952082",
+				"latitude": "64.750965"
+			},
+			"localized_data": {
+				"header": "Espresso House",
+				"category": "Cafe",
+				"description": "Caffaine, yeah!!",
+				"opening_hour": "9 AM",
+				"closing_hour": "10 PM",
+				"offers": ["Big Coffee and Chocolate Muffin at 70 Krona", "Vanilla Brownie at 30 Krona"]
+			}
+		},
+		"bangla": {
+			"geolocation": {
+				"longitude": "20.952082",
+				"latitude": "64.750965"
+			},
+			"localized_data": {
+				"header": "এক্সপ্রেসও হাউজ",
+				"category": "ক্যাফে",
+				"description": "ক্যাফেইনের রাজ্য!!",
+				"opening_hour": "সকাল ৯টা",
+				"closing_hour": "রাত ১০টা",
+				"offers": ["বড় কফি ও চকলেট মাফিন - ৭০ ক্রনা", "ভ্যানিলা ব্রাউনি - ৩০ ক্রনা"]
+			}
+		}
+	},
+	"8": {
+		"english": {
+			"geolocation": {
+				"longitude": "20.949775",
+				"latitude": "64.750754"
+			},
+			"localized_data": {
+				"header": "Carl-Viktor Café & Servering AB Carl-Viktor",
+				"category": "Catering",
+				"description": "Big orders for big occasion",
+				"opening_hour": "10 AM",
+				"closing_hour": "2 PM",
+				"offers": ["10% discount for order over 250 people"]
+			}
+		},
+		"bangla": {
+			"geolocation": {
+				"longitude": "20.949775",
+				"latitude": "64.750754"
+			},
+			"localized_data": {
+				"header": "কার্ল-ভিক্টর ক্যাফে ও কেটারিং",
+				"category": "কেটারিং",
+				"description": "বড় উৎসবে আকর্ষণীয় ছাড়",
+				"opening_hour": "সকাল ১০টা",
+				"closing_hour": "দুপুর ২টা",
+				"offers": ["২৫০ জনের চেয়ে বড় অর্ডারের জন্য ১০% ছাড়"]
+			}
+		}
+	},
+	"9": {
+		"english": {
+			"geolocation": {
+				"longitude": "20.946513",
+				"latitude": "64.751389"
+			},
+			"localized_data": {
+				"header": "Texas Longhorn",
+				"category": "Restaurant",
+				"description": "Good grills!! Good price!!",
+				"opening_hour": "4 PM",
+				"closing_hour": "10 PM",
+				"offers": ["Lamb grill at 120 Krona", "Chicken grill and french fry in dinner at 100 Krona"]
+			}
+		},
+		"bangla": {
+			"geolocation": {
+				"longitude": "20.946513",
+				"latitude": "64.751389"
+			},
+			"localized_data": {
+				"header": "টেক্সাস লঙহর্ন",
+				"category": "রেস্তোরাঁ",
+				"description": "ভাল গ্রিল!! সহনীয় মূল্য!!",
+				"opening_hour": "বিকাল ৪টা",
+				"closing_hour": "রাত ১০টা",
+				"offers": ["ল্যাম্ব গ্রিল - ১২০ ক্রনা", "চিকেন গ্রিল ও ফ্রেঞ্চ ফ্রাই - ১০০ ক্রনা"]
+			}
+		}
+	},
+	"10": {
+		"english": {
+			"geolocation": {
+				"longitude": "20.948163",
+				"latitude": "64.750769"
+			},
+			"localized_data": {
+				"header": "Dallas",
+				"category": "Pizza & Kebab",
+				"description": "Unlimited sauce!",
+				"opening_hour": "11 AM",
+				"closing_hour": "9 PM",
+				"offers": ["Chicken Pizza with Mozarella at 80 Krona", "Bolognese Pizza at dinner at 70 Krona"]
+			}
+		},
+		"bangla": {
+			"geolocation": {
+				"longitude": "20.948163",
+				"latitude": "64.750769"
+			},
+			"localized_data": {
+				"header": "ডালাস",
+				"category": "পিজা ও কাবাব",
+				"description": "যত খুশী তত সস",
+				"opening_hour": "সকাল ১১টা",
+				"closing_hour": "রাত ৯টা",
+				"offers": ["মজারেলা সহ চিকেন পিজা - ৮০ ক্রনা", "বলগ্নিজ পিজা(রাতের খাবারে) - ৭০ ক্রনা"]
+			}
+		}
+	}
 }
