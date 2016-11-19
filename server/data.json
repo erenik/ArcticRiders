@@ -8,22 +8,24 @@
       "localized_data": {
             "header":"Wok N Roll",
             "category": "Chinese cuisine",
-            "description": "N/A",
+            "description": "Asian food at it's best",
             "opening_hour": "11 AM",
-            "closing_hour": "8 PM"
-      }
+            "closing_hour": "8 PM",
+            "offers": ["3 meals lunch at 5 Euro"]
+      },
     },
     "arabic": {
       "geolocation": {
-        "longitude": "",
-        "latitude": ""
+        "longitude": "20.955175",
+        "latitude": "64.751072"
       },
       "localized_data": {
-            "header": "Wok N Roll Arabic",
-            "category": "",
+            "header": "ووك رول",
+            "category": "المطبخ الصيني" ,
             "description": " ",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "11 AM",
+            "closing_hour": "8 PM",
+            "offers": ["3 meals lunch at 45 Krona"]
       }
     }
   },
@@ -37,22 +39,24 @@
       "localized_data": {
             "header": "Lilla Kina",
             "category": "Kebab",
-            "description": "N/A",
+            "description": "Feeling of Arabian meat in Europe",
             "opening_hour": "10AM",
-            "closing_hour": "10PM"
+            "closing_hour": "10PM",
+            "offers": ["Beef kebab at 45 Krona", "Dinner with Lamb Kebab from 6-10 PM at 70 Krona"]
       }
     },
     "arabic": {
       "geolocation": {
-        "longitude": "",
-        "latitude": ""
+        "longitude": "20.954381",
+        "latitude": "64.751504"
       },
       "localized_data": {
-            "header": "Lilla Kina Arabic",
-            "category": "",
+            "header": "يلا كينا",
+            "category": "كباب",
             "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "10 AM",
+            "closing_hour": "10 PM",
+            "offers": ["Beef kebab at 45 Krona", "Dinner with Lamb Kebab from 6-10 PM at 70 Krona"]
       }
     }
   },
@@ -65,23 +69,25 @@
       },
       "localized_data": {
             "header": "Big Smalj Torget",
-            "category": "Fast Food",
+            "category": "Best burger in the city",
             "description": "",
             "opening_hour": "10 AM",
-            "closing_hour": "8 PM"
+            "closing_hour": "8 PM",
+            "offers": ["Beef burger at 35 Krona", "Child menu at 50 Krona", "Dinner pack from 6-10 PM at 65 Krona"]
       }
     },
     "arabic": {
       "geolocation": {
-        "longitude": "",
-        "latitude": ""
+        "longitude": "20.953361",
+        "latitude": "64.750848"
       },
       "localized_data": {
-            "header": "Big Smalj Torget Arabic",
-            "category": "",
+            "header": "مربع صغير كبير",
+            "category": "الوجبات السريعة",
             "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "10 AM",
+            "closing_hour": "8 PM",
+            "offers": ["Beef burger at 35 Krona", "Child menu at 50 Krona", "Dinner pack from 6-10 PM at 65 Krona"]
       }
     }
   },
@@ -94,23 +100,25 @@
       },
       "localized_data": {
             "header": "Restaurang Nygatan 57",
-            "category": "Pure Dining",
-            "description": "",
+            "category": "Swedish Dining",
+            "description": "Higher Quality, Higher Price",
             "opening_hour": "5 PM",
-            "closing_hour": "11 PM"
+            "closing_hour": "11 PM",
+            "offers": ["3 course meals at dinner at 135 Krona"]
       }
     },
     "arabic": {
       "geolocation": {
-        "longitude": "",
-        "latitude": ""
+        "longitude": "20.956204",
+        "latitude": "64.750790"
       },
       "localized_data": {
-            "header": "",
+            "header": "مطعم Nygatan 57",
             "category": "",
             "description": "",
-            "opening_hour": "",
-            "closing_hour": ""
+            "opening_hour": "5 PM",
+            "closing_hour": "11 PM",
+            "offers": ["3 course meals at dinner at 135 Krona"]
       }
     }
   },
@@ -122,10 +130,10 @@
       },
       "localized_data": {
             "header": "Bryggargatan Bistro och Bar",
-            "category": "Bar",
-            "description": "",
+            "category": "Cafe & Bar",
+            "description": "Most happenig bar in weekends",
             "opening_hour": "5 PM",
-            "closing_hour": "11 PM"
+            "offers": ["Beer at 25 Krona at Happy Hour(18-21PM)"]
       }
     },
     "arabic": {
@@ -138,7 +146,8 @@
             "category": "",
             "description": "",
             "opening_hour": "",
-            "closing_hour": ""
+            "closing_hour": "",
+            "offers": ["Beer at 25 Krona at Happy Hour(18-21PM)"]
       }
     }
   },
@@ -153,7 +162,8 @@
             "category": "Japanise Cuisine",
             "description": "We sell the best sushi in town",
             "opening_hour": "11 AM",
-            "closing_hour": "8 PM"
+            "closing_hour": "8 PM",
+            "offers": ["Sashimi in dinner at 60 Krona", "Nigiri Sushi at 75 Krona"]
       }
     },
     "arabic": {
@@ -166,7 +176,8 @@
             "category": "",
             "description": "",
             "opening_hour": "",
-            "closing_hour": ""
+            "closing_hour": "",
+            "offers": ["Sashimi in dinner at 60 Krona", "Nigiri Sushi at 75 Krona"]
       }
     }
   },
@@ -179,9 +190,10 @@
       "localized_data": {
             "header": "Espresso House",
             "category": "Cafe",
-            "description": "Chain Cafe",
+            "description": "Caffaine, yeah!!",
             "opening_hour": "9 AM",
-            "closing_hour": "10 PM"
+            "closing_hour": "10 PM",
+            "offers": ["Big Coffee and Chocolate Muffin at 70 Krona", "Vanilla Brownie at 30 Krona"]
       }
     },
     "arabic": {
@@ -194,7 +206,8 @@
             "category": "",
             "description": "",
             "opening_hour": "",
-            "closing_hour": ""
+            "closing_hour": "",
+            "offers": ["Big Coffee and Chocolate Muffin at 70 Krona", "Vanilla Brownie at 30 Krona"]
       }
     }
   },
@@ -207,9 +220,10 @@
       "localized_data": {
             "header": "Carl-Viktor Café & Servering AB Carl-Viktor",
             "category": "Catering",
-            "description": "We take big orders",
+            "description": "Big orders for big occasion",
             "opening_hour": "10 AM",
-            "closing_hour": "2 PM"
+            "closing_hour": "2 PM",
+            "offers": ["10% discount for order over 250 people"]
       }
     },
     "arabic": {
@@ -222,7 +236,8 @@
             "category": "",
             "description": "",
             "opening_hour": "",
-            "closing_hour": ""
+            "closing_hour": "",
+            "offers": ["10% discount for order over 250 people"]
       }
     }
   },
@@ -235,9 +250,10 @@
       "localized_data": {
             "header": "Texas Longhorn",
             "category": "Restaurang",
-            "description": "",
+            "description": "Good grills!! Good price!!",
             "opening_hour": "4 PM",
-            "closing_hour": "10 PM"
+            "closing_hour": "10 PM",
+            "offers": ["Lamb grill at 120 Krona", "Chicken grill and french fry in dinner at 100 Krona"]
       }
     },
     "arabic": {
@@ -250,7 +266,8 @@
             "category": "",
             "description": "",
             "opening_hour": "",
-            "closing_hour": ""
+            "closing_hour": "",
+            "offers": ["Lamb grill at 120 Krona", "Chicken grill and french fry in dinner at 100 Krona"]
       }
     }
   },
@@ -262,10 +279,11 @@
       },
       "localized_data": {
             "header": "Dallas",
-            "category": "",
-            "description": "",
+            "category": "Pizza & Kebab",
+            "description": "Unlimited sauce!",
             "opening_hour": "11 AM",
-            "closing_hour": "9 PM"
+            "closing_hour": "9 PM",
+            "offers": ["Chicken Pizza with Mozarella at 80 Krona", "Bolognese Pizza at dinner at 70 Krona"]
       }
     },
     "arabic": {
@@ -278,7 +296,8 @@
             "category": "",
             "description": "",
             "opening_hour": "",
-            "closing_hour": ""
+            "closing_hour": "",
+            "offers": ["Chicken Pizza with Mozarella at 80 Krona", "Bolognese Pizza at dinner at 70 Krona"]
       }
     }
   }
