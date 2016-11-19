@@ -31,7 +31,14 @@ public class MenuInteraction : MonoBehaviour {
 
                     GameObject go = GameObject.Find("QRScene");
                     ARLocalizedInfo other = (ARLocalizedInfo) go.GetComponent(typeof(ARLocalizedInfo));
-                    other.OnOffersButtonClicked();
+                    if (button.name.Equals("Offers"))
+                    {
+                        other.OnOffersButtonClicked();
+                    }
+                    else if (button.name.Equals("NextLang"))
+                    {
+                        other.OnNextLang();
+                    }
                 }
             }
         } 

@@ -32,6 +32,9 @@
  *
  */
 
+using System.Globalization;
+
+using System.Text.RegularExpressions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -201,6 +204,30 @@ public class ARLocalizedInfo : MonoBehaviour
         GameObject textObject = GameObject.Find("OffersText");
         textObject.GetComponent<TextMesh>().text = showingDescription? "Current Offers" : "Description"; 
 	}
+	 static string EncodeNonAsciiCharacters( string value ) {
+        StringBuilder sb = new StringBuilder();
+        foreach( char c in value ) {
+            if( c > 127 ) {
+                // This character is too big for ASCII
+                string encodedValue = "\\u" + ((int) c).ToString( "x4" );
+                sb.Append( encodedValue );
+            }
+            else {
+                sb.Append( c );
+            }
+        }
+        return sb.ToString();
+    }
+
+	static string DecodeEncodedNonAsciiCharacters( string value ) 
+	{
+        return Regex.Replace(
+            value,
+            @"\\u(?<Value>[a-zA-Z0-9]{4})",
+            m => {
+                return ((char) int.Parse( m.Groups["Value"].Value, NumberStyles.HexNumber )).ToString();
+            } );
+    }
 	void UpdateTitleText()
 	{		
 		String textToUpdate = "test "+iterations;
@@ -208,7 +235,26 @@ public class ARLocalizedInfo : MonoBehaviour
 		GameObject textObject = GameObject.Find("TitleText");
 		TextMesh textMesh = textObject.GetComponent<TextMesh>();
 		iterations += 1;
-     	textMesh.text = textToUpdate;		
+
+		/// Convert from char array to unicode
+
+//string convertedUtf8 = Encoding.UTF8.GetString(bytes);
+//string convertedUtf16 = Encoding.Unicode.GetString(bytes); // For UTF-16
+		
+/*
+		byte[] bytes = new byte[textToUpdate.ToCharArray().Length];
+		for (int i = 0; i < bytes.Length; ++i)
+		{
+			bytes[i] = (byte) textToUpdate.ToCharArray()[i];
+		}
+		textMesh.text = Encoding..GetString(bytes);
+		*/
+//		byte[] bytes = Encoding.Unicode.GetBytes(textToUpdate);
+//		String unicodeString = Encoding.UTF8.GetString(bytes);
+//		textMesh.text = unicodeString;		
+
+		textMesh.text = DecodeEncodedNonAsciiCharacters(textToUpdate);
+//     	textMesh.text = textToUpdate.ToString();		
 	}
 
 	public void UpdateDescription()
@@ -220,9 +266,21 @@ public class ARLocalizedInfo : MonoBehaviour
 			return;
 		}
 		TextMesh tm = textObject.GetComponent<TextMesh>(); 
+		String text = "";
 		if (ShowingOffers())
-			tm.text = "Very offerious!";
-		tm.text = GetDescription();
+			text = GetRandomOffer();
+		else
+			text = GetDescription();
+		tm.text = DecodeEncodedNonAsciiCharacters(text);
+	}
+	public void OnNextLang()
+	{
+		if (language.Equals("english"))
+			language = "bangla";
+		else
+			language = "english";
+		UpdateDescription();
+		UpdateTitleText();
 	}
 	void OnMarkerLost(ARMarker marker)
 	{
@@ -295,6 +353,21 @@ public class ARLocalizedInfo : MonoBehaviour
 				return localizedData.list[i].str;
 		}
         return "Description could not be found";
+	}
+	String GetRandomOffer()
+	{
+		JSONObject localizedData = GetLocalizedData();
+		if (localizedData == null)
+			return "Error: "+errorString;
+		JSONObject offers = localizedData.GetField("offers");
+		if (offers == null)
+			return "Error, offers array null";
+		for (int i = 0; i < offers.Count; ++i)
+		{
+			String offer = offers.list[i].str;
+			return offer;
+		}
+		return "Bad offer, size 0 array";
 	}
 	bool JSONDownloaded()
 	{
