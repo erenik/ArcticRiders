@@ -1,0 +1,93 @@
+<!--
+@Author: mdrhri-6
+@Date:   2016-11-19T21:48:38+01:00
+@Last modified by:   mdrhri-6
+@Last modified time: 2016-11-20T09:00:42+01:00
+-->
+
+
+<HTML>
+  <style>
+    .navbar {
+        height: 55px;
+    }
+    .nav {
+        height: 60px;
+    }
+  </style>
+  <!-- Latest compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <HEAD>
+    <TITLE>A Table</TITLE>
+  </HEAD>
+  <BODY BGCOLOR="FFFFFF">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid" align="left">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><IMG class="active" src="/static/logo.png" width="50" height="50" ALIGN="LEFT"></li>
+            <li style="margin: 5 5 5 5;">  </li>
+            <li id="home-li" class="active" style="height: 60px;"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li id="offer-li"><a href="#offer-form">Add offer</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div>
+      <div class="container">
+        <div id="main">
+          <p><h1 style="text-align: center; font-size: 100px;">À Table</h1></p>
+          <p><h3 style="text-align: center; font-size: 60px;">Find Everything About Your Favourite Restaurant or Grocery stores</h3></p>
+        </div>
+
+        <form id="offer-form">
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Restaurant Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputEmail3" placeholder="Restaurant Name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Offer</label>
+            <div class="col-sm-10">
+              <input type="textarea" class="form-control" id="inputPassword3" placeholder="Offer">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="offset-sm-2 col-sm-10">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </BODY>
+</HTML>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#offer-form").hide();
+        $("#offer-li").click(function(){
+            $("#home-li").removeClass("active");
+            $("#offer-li").addClass("active");
+            $("#offer-form").show();
+            $("#main").hide();
+        });
+        $("#home-li").click(function(){
+            $("#home-li").addClass("active");
+            $("#offer-li").removeClass("active");
+            $("#offer-form").hide();
+            $("#main").show();
+        });
+    });
+
+</script>

@@ -1,11 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # @Author: mdrhri-6
 # @Date:   2016-11-19T10:31:52+01:00
 # @Last modified by:   mdrhri-6
-# @Last modified time: 2016-11-19T16:08:46+01:00
+# @Last modified time: 2016-11-20T09:09:29+01:00
 
-# from __future__ import unicode_literals
-# import unicodedata
-from flask import Flask, request, json
+from flask import Flask, request, json, render_template
 from flask_json import FlaskJSON, JsonError, json_response, as_json
 import sys
 
@@ -14,9 +15,13 @@ app.config['DEBUG'] = True
 
 FlaskJSON(app)
 
+@app.route('/')
+def hello():
+    return render_template("index.html")
+
 @app.route("/api/getDetails/<int:id>")
 @as_json
-def hello(id):
+def get_data(id):
     with open('data.json') as data_file:
         data = json.load(data_file)
     if data.has_key(str(id)):
