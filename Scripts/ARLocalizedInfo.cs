@@ -40,6 +40,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using ArabicSupport;
 
 [RequireComponent(typeof(Transform))]
 [ExecuteInEditMode]
@@ -218,7 +219,7 @@ public class ARLocalizedInfo : MonoBehaviour
         return sb.ToString();
     }
 
-	string DecodeEncodedNonAsciiCharacters( string value ) 
+	String DecodeEncodedNonAsciiCharacters( string value ) 
 	{
 		string replaced = Regex.Replace(
             value,
@@ -226,19 +227,23 @@ public class ARLocalizedInfo : MonoBehaviour
             m => {
                 return ((char) int.Parse( m.Groups["Value"].Value, NumberStyles.HexNumber )).ToString();
             } );
-		if (language.Equals("arabic"))
+        if (language.Equals("arabic"))
 		{
+			String str = new String(replaced.ToCharArray());
+			str = ArabicFixer.Fix(replaced);
+			return str;
+			/*
 			char[] cArray = replaced.ToCharArray();
 			char[] newCArray = new char[cArray.Length];
 			for (int i = cArray.Length - 1; i >= 0; --i)
 			{
 				newCArray[cArray.Length - i - 1] = cArray[i];
-    	    }
+    	    }*/
 //	    	replaced = new string(newCArray); 
-			String reverse = new String(newCArray);
-    	    return reverse;
+//			String reverse = new String(newCArray);
+    	 //   return reverse;
 		}
-        return replaced;
+		return replaced;
     }
 	void UpdateTitleText()
 	{		
@@ -342,7 +347,7 @@ public class ARLocalizedInfo : MonoBehaviour
 	{
 		if (JSONDownloaded() == false)
 		{
-			errorString = "Not downloaded yet, progress: "+DownloadProgress();
+			errorString = "Not downloaded yet,\nprogress: "+DownloadProgress()+" attempts: "+numRequests;
 			return null;
 		}	
 		JSONObject jsonObj = new JSONObject(jsonDownload.text);
@@ -421,6 +426,7 @@ public class ARLocalizedInfo : MonoBehaviour
 
 	// Download JSON once / or when config changes?
 	static int downloadRequests = 0; 
+	static int numRequests = 0;
 	void DownloadJSON()
 	{
 		if (jsonDownload != null)
@@ -435,6 +441,7 @@ public class ARLocalizedInfo : MonoBehaviour
 			// Re-download every 10 seconds?
 			downloadRequests = 0;
 		}
+		++numRequests;
 		String url = "https://raw.githubusercontent.com/erenik/ArcticRiders/master/server/data.json";
 		url = "http://54.212.196.65:5000/api/getDetails/1";
 		// url = "http://www.google.come";
